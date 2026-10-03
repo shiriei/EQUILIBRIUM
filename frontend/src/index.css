@@ -1,0 +1,121 @@
+
+:root {
+  /* LIGHT THEME */
+  --page-bg: #EEF2F7;
+  --main-content-bg: #EEF2F7; /* Matches page for light */
+  
+  --surface-card: #FFFFFF;
+  --surface-panel: #F8FAFC;
+  --surface-input: #FFFFFF;
+  
+  --border: #94A3B8;
+  --border-strong: #64748B;
+  --border-separator: #CBD5E1;
+  
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-placeholder: #94A3B8;
+  
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  
+  --physics-accent: #2563EB;
+  --thermo-accent: #D97706;
+  --chem-accent: #0D9488;
+  
+  --nav-bg: #FFFFFF;
+  --nav-border: #94A3B8;
+
+  --shadow-card: 0 4px 12px rgba(0,0,0,0.05);
+  --shadow-panel: 0 6px 16px rgba(0,0,0,0.08);
+
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --border-radius: 12px;
+}
+
+[data-theme="dark"] {
+  /* DARK THEME */
+  --page-bg: #050814;
+  --main-content-bg: #080D1A;
+  
+  --surface-card: #141E31;
+  --surface-panel: #172238;
+  --surface-input: #070C17;
+  
+  --border: #52627A; /* Card border */
+  --border-strong: #465873; /* Slightly darker for left cards as per user: 2px solid #465873 */
+  --border-panel: #52627A;
+  --border-separator: #3D4D65;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #C7D5E5;
+  --text-placeholder: #AFC0D4;
+  
+  --accent: #3B82F6;
+  --accent-hover: #60A5FA;
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --error: #EF4444;
+
+  --physics-accent: #60A5FA;
+  --thermo-accent: #FBBF24;
+  --chem-accent: #2DD4BF;
+  
+  --nav-bg: #0D1525;
+  --nav-border: #334155;
+
+  --shadow-card: 0 8px 24px rgba(0,0,0,0.30);
+  --shadow-panel: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  margin: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  line-height: 1.5;
+}
+
+/* Subtle background grid */
+[data-theme="dark"] body {
+  background-image: 
+    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+[data-theme="light"] body {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--accent-hover);
+  outline-offset: 2px;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  margin: 0;
+}

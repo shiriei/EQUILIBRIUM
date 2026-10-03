@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Earth",
+        "gravitational_acceleration": 9.81,
+        "unit": "m/s^2",
+        "source": "NASA Planetary Fact Sheet",
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+        "notes": "Standard gravity."
+    },
+    {
+        "name": "Moon",
+        "gravitational_acceleration": 1.62,
+        "unit": "m/s^2",
+        "source": "NASA Planetary Fact Sheet",
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+        "notes": "Lunar equatorial gravity."
+    },
+    {
+        "name": "Mars",
+        "gravitational_acceleration": 3.71,
+        "unit": "m/s^2",
+        "source": "NASA Planetary Fact Sheet",
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+        "notes": "Martian equatorial gravity."
+    },
+    {
+        "name": "Jupiter",
+        "gravitational_acceleration": 24.79,
+        "unit": "m/s^2",
+        "source": "NASA Planetary Fact Sheet",
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+        "notes": "Jovian equatorial gravity at 1 bar."
+    }
+]
